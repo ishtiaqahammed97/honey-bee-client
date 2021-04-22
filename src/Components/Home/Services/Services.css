@@ -1,0 +1,12 @@
+.hover01 img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    width: 350px;
+    height: 300px;
+}
+.hover01:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+};
