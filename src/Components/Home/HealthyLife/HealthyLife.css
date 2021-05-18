@@ -1,9 +1,6 @@
 .background-details {
-    background-image: url(../../../images/bee1.jpg);
-    width: 91%;
-    height: 700px;
-    margin-left: 48px;
-    opacity: .9;
-    background-size: cover;
+    /* background-image: url(../../../images/bee1.jpg); */
+    width: 92%;
+    margin-left: 40px;
     border-radius: 5px;
 }

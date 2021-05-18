@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className="">
+        <div>
             <h3 style={{color:'#ebaf4c'}} className="text-center">honeyBee</h3>
             <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">

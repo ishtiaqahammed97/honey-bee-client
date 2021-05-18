@@ -6,6 +6,7 @@ import Services from '../Services/Services';
 import './Product.css'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Book from '../../Booking/Book';
 
 
 
@@ -32,17 +33,19 @@ import { useEffect } from 'react';
 
 const Product = () => {
     const [products, setProducts] = useState([]);
+    // console.log(products)
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://afternoon-eyrie-74810.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
 
     }, [])
+
     return (
         <div className="product-background">
             <h1 className="text-center mt-5">Our Organic Products</h1>
-            <div className="card-deck d-flex ms-5">
+            <div className="card-deck d-flex ms-5 row">
                 {
                     products.map(product => <Services product={product}> </Services>)
                 }

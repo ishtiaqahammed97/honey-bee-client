@@ -8,19 +8,45 @@ import {
   Link
 } from "react-router-dom";
 import AddProducts from './Components/Admin/AddProducts/AddProducts';
+import Login from './Components/Authentication/Login';
+import Booking from './Components/Booking/Booking';
+import BookingList from './Components/Booking/BookingList';
+import Review from './Components/Booking/Review';
+import Book from './Components/Booking/Book';
+import { createContext } from 'react';
+import { useState } from 'react';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({})
+
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-        <Home></Home>
-        </Route>
-        <Route path="/addProducts">
-          <AddProducts></AddProducts>
-        </Route>
-      </Switch>
-    </Router>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/addProducts">
+            <AddProducts></AddProducts>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <PrivateRoute path="/book">
+            <Book></Book>
+          </PrivateRoute>
+          <PrivateRoute path="/bookingList">
+            <BookingList></BookingList>
+          </PrivateRoute>
+          <PrivateRoute path="/review">
+            <Review></Review>
+          </PrivateRoute>
+        </Switch>
+      </Router>
+    </UserContext.Provider>
   );
 }
 

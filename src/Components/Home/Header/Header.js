@@ -14,7 +14,7 @@ const Header = () => {
                       {/* #C58F00 color */}
                   </div>
                   <div className="col-md-7">
-                      <img style={{height: '450px', width:'700px'}} className="img-fluid"  src={cover} alt=""/>
+                      <img style={{height: '', width:'700px'}} className="img-fluid" src={cover} alt=""/>
                   </div>
 
               </div>

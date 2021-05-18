@@ -1,0 +1,10 @@
+.booking-bg {
+    height: 600px;
+    background-color: #ffefc4;
+}
+.payment {
+    width: 60px;
+    background-color: #f1c23e;
+    border: thin;
+    border-radius: 3px;
+}
