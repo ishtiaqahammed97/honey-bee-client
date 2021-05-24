@@ -1,8 +1,17 @@
-/* .background-color {
-    background-color: #C58F00;
-    width: 90%;
-    margin-left: 50px;
-    border-radius: 10px;
-    opacity: .9;
+.btn-main {
+    border: none;
+    background: #fd7709;
+    color: white;
+    border-radius: 8px;
+    height: 38px;
+}
+.btn-main:hover {
+    background: #e9710e;
+}
+.btn-main:active {
+    background: #da6a0e;
+} 
+.header-height {
+    height: 480px;
+}
 
-} */

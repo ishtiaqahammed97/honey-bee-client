@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGooglePlus } from '@fortawesome/free-brands-svg-icons';
 import { UserContext } from '../../App';
 import { useState } from 'react';
+import Navbar from '../Shared/Navabar/NavBar';
+import Footer from '../Shared/Footer/Footer';
 
 
 if (firebase.apps.length === 0) {
@@ -40,10 +42,14 @@ const Login = () => {
             });
     }
     return (
-        <div className="login-text">
+        <section>
+            <Navbar></Navbar>
+            <div className="login-text">
             <h5><strong className="text-side">Login With</strong></h5>
             <button className="login-bar text-white mt-2" onClick={handleGoogleSignIn}><FontAwesomeIcon className="google-icon" icon={faGooglePlus} />Sign In With Google </button>
         </div>
+        <Footer></Footer>
+        </section>
     );
 };
 

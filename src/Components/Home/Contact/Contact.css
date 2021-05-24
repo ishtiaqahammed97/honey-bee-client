@@ -1,6 +1,5 @@
 .contact{
-    background-image: url(../../../images/bee2.jpg);
-    background-size: cover;
+    background: #444442;
     position: relative;
     z-index: 1;
 }

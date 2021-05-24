@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import Navbar from '../../Shared/Navabar/NavBar';
 
 const AddProducts = () => {
     // const [info, setInfo] = useState({});
@@ -72,39 +73,27 @@ const AddProducts = () => {
     }
 
     return (
-        <section className="container-fluid row">
+        <section>
+            <div>
+                <Navbar></Navbar>
+            </div>
+            <div className="container-fluid row">
             <div className="col-md-10 p-4 pr-5" style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
                 <h5 className="text-brand">Add a Product</h5>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
 
-                <input name="name" defaultValue="New Product" ref={register} />
+                <input name="name" className="form-control" defaultValue="New Product" ref={register} />
                 <br />
-                <input name="price" defaultValue="price" ref={register} />
+                <input name="price" className="form-control" defaultValue="price" ref={register} />
                 <br />
-                <input name="exampleRequired" type="file" onChange={handleImageUpload} />
+                <input name="exampleRequired" className="form-control" type="file" onChange={handleImageUpload} />
                 <br />
 
-                <input type="submit" />
+                <input type="submit" className="btn btn-primary" />
             </form>
-
-                {/* <form onSubmit={onSubmit}>
-                    <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Product Name</label>
-                        <input type="text" className="form-control" name="name" placeholder="Enter product" />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">Price</label>
-                        <input type="text" className="form-control" name="price" placeholder="Price" />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="exampleInputPassword1">Upload a image</label>
-                        <input type="file" onChange={handleImageUpload} className="form-control" id="exampleInputPassword1" placeholder="Picture" />
-                    </div>
-                    <input type="submit" className="btn btn-primary" />
-                </form> */}
-
             </div>
+        </div>
         </section>
     );
 };

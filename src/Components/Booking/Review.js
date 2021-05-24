@@ -5,10 +5,10 @@ import './booking.css'
 const Review = () => {
     return (
         <section className="row">
-            <div className="col-md-3 col-sm-3 mt-5">
-                <Link to={`/book`}><p>Book</p></Link>
-                <Link to={`/bookingList`}><p>Service List</p></Link>
-                <Link to={`/review`}><p>Review</p></Link>
+            <div className="col-md-3 col-sm-3 mt-5 sidebar-bg">
+                <Link className="text-white" style={{textDecoration: 'none'}} to={`/book`}><p>Book</p></Link>
+                <Link className="text-white" style={{textDecoration: 'none'}} to={`/bookingList`}><p>Service List</p></Link>
+                <Link className="text-white" style={{textDecoration: 'none'}} to={`/review`}><p>Review</p></Link>
 
             </div>
 

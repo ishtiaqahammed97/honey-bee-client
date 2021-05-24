@@ -1,10 +1,10 @@
 import React from 'react';
 import Contact from '../Contact/Contact';
 import Farm from '../Farm/Farm';
-import Footer from '../Footer/Footer';
+import Footer from '../../Shared/Footer/Footer';
 import Header from '../Header/Header';
 import HealthyLife from '../HealthyLife/HealthyLife';
-import Navbar from '../Navabar/Navbar';
+import Navbar from '../../Shared/Navabar/NavBar';
 import Product from '../Product/Product';
 import Testimonials from '../Testimonilas/Testimonials';
 

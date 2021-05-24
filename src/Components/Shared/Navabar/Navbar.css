@@ -1,0 +1,10 @@
+.navbar-bg {
+    background-color: #f1c23e;
+    border-radius: 3px;
+
+}
+.navbar-bg img {
+    height: 60px;
+    border-radius: 45px;
+    margin-left: 15px;
+}
