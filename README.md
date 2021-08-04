@@ -6,7 +6,7 @@ Technology used:
 2.React.js
 3.NPM
 4.Firebase
-5.ES6
+5.ES6 etc
 
 
 # complete-website-client-ishtiaqahammed97
