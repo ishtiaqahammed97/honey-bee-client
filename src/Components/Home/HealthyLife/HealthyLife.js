@@ -25,5 +25,4 @@ const HealthyLife = () => {
 
     );
 };
-0
 export default HealthyLife;

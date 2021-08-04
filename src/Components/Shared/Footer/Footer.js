@@ -6,34 +6,25 @@ import { faFacebookF, faInstagram, faGooglePlusG } from '@fortawesome/free-brand
 
 const Footer = () => {
     const noNamed = [
-        {name: "Emergency Dental Care" , link: "/emergency"},
-        {name: "Check Up" , link: "/checkup"},
-        {name: "Treatment of Personal Diseases" , link: "/personal-treatment"},
-        {name: "Tooth Extraction" , link: "/tooth-extract"},
-        {name: "Check Up" , link: "/checkup"},
+        {name: "General Store" , link: "/store"},
+        {name: "General Store" , link: "/store"},
+        {name: "Super shop" , link: "/super-shop"},
+        {name: "Super Shop" , link: "/super-shop"}
     ]
     const ourAddress = [
-        {name: "New York - 101010 Hudson" , link: "//google.com/map"},
-        {name: "Yards" , link: "//google.com/map"},
-       
+        {name: "Joydebpur, Gazipur" , link: "//google.com/map"},
+        {name: "Gazipur" , link: "//google.com/map"}
     ]
     const ourStore = [
-        {name: "Emergency Dental Care" , link: "/emergency"},
-        {name: "Check Up" , link: "/checkup"},
-        {name: "Treatment of Personal Diseases" , link: "/personal-treatment"},
-        {name: "Tooth Extraction" , link: "/tooth-extract"},
-        {name: "Check Up" , link: "/checkup"},
-        {name: "Check Up" , link: "/checkup"},
-        {name: "Check Up" , link: "/checkup"}
+        {name: "Online Shop" , link: "/online-shop"},
+        {name: "Online Shop" , link: "/online-shop"},
+        {name: "Wholesale" , link: "/wholesale"},
+        {name: "Wholesale" , link: "/wholesale"},
     ]
     const services = [
-        {name: "Emergency Dental Care" , link: "/emergency"},
-        {name: "Check Up" , link: "/checkup"},
-        {name: "Treatment of Personal Diseases" , link: "/personal-treatment"},
-        {name: "Tooth Extraction" , link: "/tooth-extract"},
-        {name: "Check Up" , link: "/checkup"},
-        {name: "Check Up" , link: "/checkup"},
-        {name: "Check Up" , link: "/checkup"}
+        {name: "Home Delivery" , link: "/home-delivery"},
+        {name: "Wholesale Price" , link: "/wholesale-price"},
+        {name: "Payment on delivery" , link: "/payment-on-delivery"},
     ]
     return (
         <footer className="footer-area clear-both">
@@ -50,7 +41,7 @@ const Footer = () => {
                         </ul>
                         <div className="mt-5">
                             <h6>Call now</h6>
-                            <button className="btn btn-primary">+2025550295</button>
+                            <button className="btn btn-primary">+880 1770618667</button>
                         </div>
                     </FooterCol>
                 </div>
